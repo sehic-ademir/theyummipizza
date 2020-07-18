@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'paths' => ['/public/api/*'],
+    'paths' => ['api/*'],
 
     'allowed_methods' => ['*'],
 
@@ -25,10 +25,10 @@ return [
 
     'allowed_headers' => ['*'],
 
-    'exposed_headers' => [true],
+    'exposed_headers' => [],
 
     'max_age' => 0,
 
-    'supports_credentials' => true,
+    'supports_credentials' => false,
 
 ];
