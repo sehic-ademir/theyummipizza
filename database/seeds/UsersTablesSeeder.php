@@ -16,14 +16,6 @@ class UsersTablesSeeder extends Seeder
             'email' => 'john_doe@gmail.com',
             'password' => Hash::make('password'),
             'remember_token' => str_random(10),
-            'admin' => 1
-        ]);
-        User::create([
-            'name' => 'Not Registered',
-            'email' => 'not_registered',
-            'password' => Hash::make(str_random(10)),
-            'remember_token' => str_random(10),
-            'admin' => 0
         ]);
     }
 }
